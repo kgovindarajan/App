@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/orbita"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft= "40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_marginLeft="5dp"
+            android:text="@string/emailTextView"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="20dp " />
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailTextView"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text"/>
+
+        <TextView
+            android:id="@+id/passwordTextView"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="@string/passwordTextView"
+            android:layout_below="@+id/emailEditText"/>
+
+         <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordTextView"
+            android:layout_margin="5dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text"/>
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordEditText"
+            android:text="@string/signUpButton"
+            android:textAllCaps="false"
+            android:onClick="onSIgnUpClick"
+            android:layout_alignLeft="@+id/passwordEditText"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordEditText"
+            android:text="@string/signInButton"
+            android:textAllCaps="false"
+            android:onClick="onSIgnInClick"
+            android:layout_alignRight="@+id/passwordEditText"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/signInButton"
+            android:text="@string/forgotPassTextView"
+            android:layout_marginTop="20dp"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

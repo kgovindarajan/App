@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="50dp">
+
+    <TextView
+        android:id="@+id/firstNameTextView"
+        android:text="@string/firstNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:layout_below="@+id/firstNameTextView"
+        android:layout_alignLeft="@+id/firstNameTextView"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/lastNameTextView"
+        android:text="@string/lastNameText"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_toRightOf="@+id/firstNameTextView"
+        android:layout_height="20dp" />
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:layout_below="@+id/lastNameTextView"
+        android:layout_toRightOf="@+id/firstNameEditText"
+        android:layout_alignLeft="@+id/lastNameTextView"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/emailAddTextView"
+        android:text="@string/emailText"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/firstNameEditText"
+        android:layout_marginTop="20dp"
+        android:layout_height="20dp" />
+    <EditText
+        android:id="@+id/emailAddEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:layout_below="@+id/emailAddTextView"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/passTextView"
+        android:layout_width="match_parent"
+        android:text="@string/passwordTextView"
+        android:layout_below="@+id/emailAddEditText"
+        android:layout_marginTop="20dp"
+        android:layout_height="20dp" />
+    <EditText
+        android:id="@+id/passEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:layout_below="@+id/passTextView"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/retypePassTextView"
+        android:layout_width="match_parent"
+        android:text="@string/retypePass"
+        android:layout_below="@+id/passEditText"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/retypePassEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:layout_below="@+id/retypePassTextView"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"/>
+
+
+    <!--<TextView
+        android:id="@+id/retypePassTextView"
+        android:layout_width="match_parent"
+        android:text="@string/retypePass"
+        android:layout_below="@+id/passEditText"
+        android:layout_marginTop="20dp"
+        android:layout_height="20dp" />
+    <EditText
+        android:id="@+id/retypePassEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:layout_below="@+id/retypePassTextView"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"/>-->
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retypePassEditText"
+        android:layout_marginTop="20dp"
+        android:text="@string/signUpButton"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

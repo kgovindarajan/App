@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="emailTextView">Email Address</string>
+    <string name="passwordTextView">Password</string>
+    <string name="forgotPassTextView">Forgot Password ?</string>
+    <string name="signUpButton">Sign Up</string>
+    <string name="signInButton">Sign In</string>
+    <string name="firstNameText">First Name</string>
+    <string name="lastNameText">Last Name</string>
+    <string name="emailText">Email Address</string>
+    <string name="phoneText">Cell Phone Number</string>
+    <string name="retypePass">Retype Password</string>
+    <string name="gettingStarted">Getting Started</string>
+    <string name="createCircleText1">A care circle is made of at least one care giver and one patient.\n\nUse your contact to add more people to your care circle \n\nWe will only access your contacts to help you setup your care circle.</string>
+    <string name="createCareCircleButton">Create a Care Circle</string>
+</resources>
+
